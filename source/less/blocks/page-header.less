@@ -1,4 +1,11 @@
 .page-header {
+  background-color: @basic_white;
+
+  outline: 3px solid rgb(255, 68, 171);
+  outline-offset: -3px;
+}
+
+.page-header--background {
   background-color: @special_blue;
 }
 
@@ -17,8 +24,8 @@
     width: 1320px;
   }
 
-  outline: 4px solid red;
-  outline-offset: -4px;
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
 
 .page-header__top {
@@ -27,9 +34,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 73px;
+  background: @basic_white;
 
-  outline: 3px solid rgb(255, 238, 1);
-  outline-offset: -3px;
+  outline: 1px solid rgb(255, 238, 1);
+  outline-offset: -1px;
 
   @media (min-width: @tablet_width) {
     min-height: 132px;
@@ -40,24 +48,48 @@
   }
 }
 
+.page-header__top--background-color {
+  background-color: @special_blue;
+}
+
 .logo-link {
   min-height: 15px;
-  min-width: 96px;
-  background: url(../img/logo_mobile3.svg) no-repeat;
-  margin-top: 19px;
+  min-width: 100px;
+  margin-top: 27px;
+
+  outline: 1px solid red;
+  outline-offset: -1px;
 
   @media (min-width: @tablet_width) {
     min-height: 42px;
     min-width: 166px;
     margin-top: 45px;
-    background: url(../img/logo-tablet.svg) no-repeat;
   }
 
   @media (min-width: @desktop_width) {
     min-height: 52px;
     min-width: 200px;
     margin-top: 47px;
-    background: url(../img/logo-desktop-white1.png) no-repeat;
+  }
+}
+
+.logo-image {
+  background-image: url("../img/logo_mobile_blue.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/logo_mobile_blue@2x.png");
+    background-size: 100% auto;
+  }
+}
+
+.logo-image--toggle-closed {
+  background-image: url("../img/logo_mobile_white.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/logo_mobile_white@2x.png");
+    background-size: 100% auto;
   }
 }
 
@@ -137,13 +169,28 @@
 }
 
 .main-nav {
+  position: absolute;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: @basic_white;
+  top: 73px;
 
-  outline: 2px solid rgb(13, 0, 128);
-  outline-offset: -2px;
+  @media (min-width: @tablet_width) {
+    top: 132px;
+  }
+
+  @media (min-width: @desktop_width) {
+    top: 110px;
+  }
+
+  outline: 1px solid rgb(30, 180, 0);
+  outline-offset: -1px;
+}
+
+.main-nav--closed {
+  display: none;
 }
 
 .main-nav__list {
@@ -267,4 +314,8 @@
   background: url(../img/icon_instagram.svg) no-repeat 11px/21px;
   background-size: contain;
   margin-top: 2px;
+}
+
+.none {
+  display: none;
 }
