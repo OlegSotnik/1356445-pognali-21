@@ -1,0 +1,36 @@
+.promo {
+  background-color: @basic_blue;
+}
+
+.promo-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 25px;
+  height: 100%;
+  background-image: url("../img/globe_back_mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -220px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/globe_back_mobile@2x.png");
+  }
+}
+
+.promo__slogan-container {
+  width: 238px;
+  height: auto;
+  margin: 21px auto 0 auto;
+  padding: 0;
+}
+
+.promo__slogan {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: @basic_white;
+}

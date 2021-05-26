@@ -1,20 +1,14 @@
 .page-header {
   background-color: @basic_white;
-
-  outline: 3px solid rgb(255, 68, 171);
-  outline-offset: -3px;
 }
 
-.page-header--background {
-  background-color: @special_blue;
-}
-
-.page-header__container {
+.page-header-container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 0 25px;
   height: 100%;
+  background-color: @basic_blue;
 
   @media (min-width: @tablet_width) {
     padding: 0 40px;
@@ -22,10 +16,12 @@
 
   @media (min-width: @desktop_width) {
     width: 1320px;
+    padding: 0 60px;
   }
+}
 
-  outline: 1px solid red;
-  outline-offset: -1px;
+.page-header-container--background {
+  background-color: @basic_white;
 }
 
 .page-header__top {
@@ -35,9 +31,6 @@
   justify-content: space-between;
   min-height: 73px;
   background: @basic_white;
-
-  outline: 1px solid rgb(255, 238, 1);
-  outline-offset: -1px;
 
   @media (min-width: @tablet_width) {
     min-height: 132px;
@@ -49,16 +42,13 @@
 }
 
 .page-header__top--background-color {
-  background-color: @special_blue;
+  background-color: @basic_blue;
 }
 
 .logo-link {
   min-height: 15px;
   min-width: 100px;
   margin-top: 27px;
-
-  outline: 1px solid red;
-  outline-offset: -1px;
 
   @media (min-width: @tablet_width) {
     min-height: 42px;
@@ -76,20 +66,36 @@
 .logo-image {
   background-image: url("../img/logo_mobile_blue.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/logo_mobile_blue@2x.png");
-    background-size: 100% auto;
+  }
+
+  @media (min-width: @tablet_width) {
+    background-image: url("../img/logo_tablet_blue.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/logo_tablet_ blue@2x.png");
+    }
   }
 }
 
 .logo-image--toggle-closed {
   background-image: url("../img/logo_mobile_white.png");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/logo_mobile_white@2x.png");
-    background-size: 100% auto;
+  }
+
+  @media (min-width: @tablet_width) {
+    background-image: url("../img/logo_tablet_white.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/logo_tablet_white@2x.png");
+    }
   }
 }
 
@@ -102,9 +108,6 @@
   background-color: @special_blue;
   cursor: pointer;
   border: none;
-
-  outline: 1px solid rgb(255, 166, 0);
-  outline-offset: -1px;
 
   @media (min-width: @tablet_width) {
     top: 61px;
@@ -189,9 +192,6 @@
   @media (min-width: @desktop_width) {
     top: 110px;
   }
-
-  outline: 1px solid rgb(30, 180, 0);
-  outline-offset: -1px;
 }
 
 .main-nav--closed {
