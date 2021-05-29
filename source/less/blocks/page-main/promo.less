@@ -10,8 +10,8 @@
   height: 100%;
   background-image: url("../img/globe_back_mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -220px;
+  background-size: 100% auto;
+  background-position: 0 -25vw;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/globe_back_mobile@2x.png");
@@ -33,4 +33,79 @@
   line-height: 40px;
   text-align: center;
   color: @basic_white;
+}
+
+.promo__image-container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.image-traveller-illustration {
+  margin-left: 20vw;
+}
+
+.promo__user-list {
+  display: flex;
+  flex-direction: row;
+  margin: -20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  z-index: 2;
+}
+
+.promo__user-item {
+  margin: 0;
+  padding: 0;
+}
+
+.user-item__icon-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: @special_orange;
+  border-radius: 50%;
+}
+
+.user-item__icon-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: @special_yellow-dark;
+  border-radius: 50%;
+}
+
+.promo__button-authorization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 190px;
+  height: 40px;
+  background-color: @basic_yellow;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @basic_blue;
+}
+
+.promo__user-item:nth-child(3) {
+  flex-basis: 100%;
+}
+
+.promo__background-block {
+  width: auto;
+  height: 285px;
+  background-color: @basic_blue;
+  margin: -20px -25px 0 -25px;
+
+  outline: 2px solid purple;
+  outline-offset: -2px;
 }
