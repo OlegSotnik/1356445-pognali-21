@@ -100,12 +100,107 @@
   flex-basis: 100%;
 }
 
-.promo__background-block {
+.promo__context-container {
   width: auto;
   height: 285px;
   background-color: @basic_blue;
   margin: -20px -25px 0 -25px;
+}
 
-  outline: 2px solid purple;
-  outline-offset: -2px;
+.promo__context {
+  padding: 0 25px;
+}
+
+.context__citation {
+  min-width: 50vw;
+  margin: 48px 25px 0 25px;
+  font-family:  "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: @basic_white;
+}
+
+.context__citation-author {
+  min-width: 50vw;
+  margin: 18px 25px 0 25px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: @basic_white;
+}
+
+.promo__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: -80px 25px 39px 25px;
+  list-style: none;
+}
+
+.promo__list-container {
+  width: auto;
+  background-color: @special_blue;
+  margin: 0 -25px -39px -25px;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: -80px;
+}
+
+.promo__item:nth-child(1) {
+  height: 160px;
+  background-color: @special_orange;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 0;
+}
+
+.promo__item:nth-child(2) {
+  height: 160px;
+  background-color: @basic_orange;
+}
+
+.promo__item:nth-child(3) {
+  height: 140px;
+  background-color: @special_yellow-dark;
+}
+
+.promo__item:nth-child(4) {
+  height: 80px;
+  margin-top: -60px;
+  background-color: @basic_yellow;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.promo__item-text {
+  width: 150px;
+  margin: 22px 0 0 24px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic_blue;
+}
+
+.promo__item-number {
+  min-width: 10px;
+  margin: 22px 21px 0 0;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic_white;
 }
