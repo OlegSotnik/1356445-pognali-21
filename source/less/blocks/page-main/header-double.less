@@ -1,0 +1,45 @@
+.header-double {
+  display: none;
+
+  @media (min-width: @desktop_width) {
+    display: flex;
+    flex-direction: row;
+    width: 1320px;
+    min-height: 90px;
+    margin: 0 auto;
+    background-color: @basic_white;
+  }
+}
+
+.logo-link--double {
+  min-height: 60px;
+  min-width: 198px;
+  margin: auto 0;
+}
+
+.logo-image--double {
+  background-image: url("../img/logo_desktop_blue.png");
+  background-size: 198px 60px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/logo_desktop_blue@2x.png");
+  }
+}
+
+.main-nav--double {
+  background: @basic_white;
+  margin: auto 0;
+}
+
+.site__item-icon--double {
+  background-color: @special_blue;
+  margin-left: 58px;
+}
+
+.user-list--double {
+  margin: auto 0;
+}
+
+.site__link--double {
+  color: @special_blue;
+}
