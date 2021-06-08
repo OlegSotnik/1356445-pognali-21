@@ -1,0 +1,70 @@
+.service__container {
+  min-height: 392px;
+  background-color: @special_blue;
+  background-image:url("../img/about_mobile.png"), url("../img/bloc.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 92vw auto, 38vw auto;
+  background-position: 20px 39px, 0 39px;
+  border-radius: 0 0 25px 25px;
+
+  outline: 1px solid red;
+  outline-offset: -1px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/about_mobile@2x.png"), url("../img/bloc.svg");
+  }
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  margin: 72px 49px;
+
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.main__heading {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: @special_orange;
+  margin: 0;
+
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.service__context-container {
+  margin-top: 19px;
+
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.context__standard {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: @basic_white;
+}
+
+.context__bold-container {
+  margin: 20px 0 0 0;
+
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.context__bold {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: @basic_white;
+}
