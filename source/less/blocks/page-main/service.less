@@ -7,9 +7,6 @@
   background-position: 20px 39px, 0 39px;
   border-radius: 0 0 25px 25px;
 
-  outline: 1px solid rgb(208, 255, 0);
-  outline-offset: -1px;
-
   @media (min-resolution: 2dppx) {
     background-image: url("../img/about_mobile@2x.png"), url("../img/bloc_mobile.svg");
   }
@@ -17,12 +14,23 @@
   @media (min-width: @tablet_width) {
     min-height: 780px;
     background-image:url("../img/about_tablet.png"), url("../img/bloc_tablet.svg");
-    background-size: 50vw auto, calc(~'100% - 80px') auto;
+    background-size: 50% auto, calc(~'100% - 80px') auto;
     background-position: calc(~'100% - 8px') 144px, 40px 96px;
     border-radius: 0 0 50px 50px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/about_tablet@2x.png"), url("../img/bloc_tablet.svg");
+    }
+  }
+
+  @media (min-width: @desktop_width) {
+    min-height: 660px;
+    background-image:url("../img/about_desktop.png"), url("../img/bloc_desktop.svg");
+    background-size: 630px 665px, 212px 212px;
+    background-position: 750px -5px, 60px -20px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about_desktop@2x.png"), url("../img/bloc_desktop.svg");
     }
   }
 }
@@ -32,13 +40,16 @@
   flex-direction: column;
   margin: 72px 49px;
 
-  outline: 1px solid red;
-  outline-offset: -1px;
-
   @media (min-width: @tablet_width) {
     min-height: 554px;
-    width: 39.5vw;
+    width: 39.5%;
     margin: 137px 0 89px 74px;
+  }
+
+  @media (min-width: @desktop_width) {
+    width: 619px;
+    min-height: 455px;
+    margin: 42px 0 163px 131px;
   }
 }
 
@@ -50,9 +61,6 @@
   line-height: 24px;
   color: @special_orange;
   margin: 0;
-
-  outline: 1px solid rgb(72, 255, 0);
-  outline-offset: -1px;
 
   @media (min-width: @tablet_width) {
     font-size: 45px;
@@ -67,8 +75,9 @@
     margin: 40px 0 0 0;
   }
 
-  outline: 1px solid rgb(0, 255, 242);
-  outline-offset: -1px;
+  @media (min-width: @desktop_width) {
+    margin: 57px 0 0 0;
+  }
 }
 
 .context__standard {
@@ -84,6 +93,10 @@
     font-size: 28px;
     line-height: 33px;
   }
+
+  @media (min-width: @desktop_width) {
+    line-height: 34px;
+  }
 }
 
 .context__bold-container {
@@ -93,8 +106,9 @@
     margin-top: 31px;
   }
 
-  outline: 1px solid rgb(255, 0, 221);
-  outline-offset: -1px;
+  @media (min-width: @desktop_width) {
+    margin-top: 38px;
+  }
 }
 
 .context__bold {
@@ -108,6 +122,10 @@
   @media (min-width: @tablet_width) {
     font-size: 21px;
     line-height: 25px;
+  }
+
+  @media (min-width: @desktop_width) {
+    line-height: 24px;
   }
 }
 
@@ -126,6 +144,10 @@
     padding: 0 27px 0 33px;
     background-color: @basic_yellow;
     border-radius: 20px;
+  }
+
+  @media (min-width: @desktop_width) {
+    margin-top: 85px;
   }
 }
 
