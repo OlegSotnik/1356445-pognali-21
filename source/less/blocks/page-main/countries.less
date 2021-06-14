@@ -12,7 +12,22 @@
   display: grid;
   grid-auto-flow: row;
   justify-items: stretch;
+  grid-template-columns: 1fr;
   margin: 71px 25px 34px 25px;
+
+  @media (min-width: @tablet_width) {
+    margin: 73px 40px 80px 40px;
+    background-image: url("../img/flags_back.png");
+    background-repeat: no-repeat;
+    background-position: 100% 7px;
+    background-size: 42% auto;
+    margin-right: 20px;
+    padding: 0 35px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/flags_back@2x.png");
+    }
+  }
 
   outline: 1px solid rgb(15, 128, 0);
   outline-offset: -1px;
@@ -24,6 +39,12 @@
   margin: 0 25px;
   min-height: 153px;
 
+  @media (min-width: @tablet_width) {
+    margin: 0;
+    min-height: 267px;
+    padding-right: 45%;
+  }
+
   outline: 1px solid rgb(255, 81, 0);
   outline-offset: -1px;
 }
@@ -34,6 +55,10 @@
 
 .context__standard-container-countries {
   margin: 19px 0 0 0;
+
+  @media (min-width: @tablet_width) {
+    margin: 57px 0 0 0;
+  }
 
   outline: 2px solid rgb(128, 0, 0);
   outline-offset: -2px;
@@ -51,20 +76,51 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: @tablet_width) {
+    margin: 104px 0 0 0;
+  }
+
   // outline: 3px solid rgb(0, 109, 128);
   // outline-offset: -3px;
 }
+
+.countries__background-bloc {
+  @media (min-width: @tablet_width) {
+    position: absolute;
+    width: 141px;
+    height: 141px;
+    left: 40px;
+    top: 21px;
+    background: @basic_half_gray;
+    border-radius: 20px;
+  }
 
 .countries__item {
   display: grid;
   grid-template-rows: minmax(110px, min-content) min-content;
   grid-template-columns: 1fr;
+
+  @media (min-width: @tablet_width) {
+    grid-template-rows: 140px;
+    grid-template-columns: 1fr 186px;
+  }
+
   // outline: 3px solid rgb(128, 0, 43);
   // outline-offset: -3px;
 }
 
+.countries__image-container {
+  @media (min-width: @tablet_width) {
+    order: 2;
+  }
+}
+
 .countries__image {
   width: 100%;
+
+  @media (min-width: @tablet_width) {
+    height: 100%;
+  }
 }
 
 .countries__country {
@@ -77,6 +133,18 @@
   background: @basic_white;
   border-radius: 10px;
   margin-top: -18px;
+
+  @media (min-width: @tablet_width) {
+    order: 1;
+    grid-template-areas: "country__flag-container"
+                         "country__box"
+                         "country__user";
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px minmax(49px, min-content) minmax(24px, min-content);
+    margin: 0;
+    border-radius: 15px 0 0 15px;
+  }
+
   // outline: 1px solid rgb(55, 0, 128);
   // outline-offset: -1px;
 }
@@ -89,6 +157,13 @@
   position: absolute;
   top: -12px;
   left: 25px;
+
+  @media (min-width: @tablet_width) {
+    top: 17px;
+    left: calc(~'100% - 35px');
+    width: 70px;
+    height: 47px;
+  }
 }
 
 .country__box {
@@ -97,15 +172,25 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content min-content;
   grid-gap: 2px;
+
+  @media (min-width: @tablet_width) {
+    grid-gap: 0px;
+  }
 }
 
 .country__name {
-  margin: 0 24px 0 24px;
+  margin: 0 24px;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   color: @basic_black;
+
+  @media (min-width: @tablet_width) {
+    margin: 0 29px;
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .country__slogan {
@@ -117,6 +202,12 @@
   line-height: 18px;
   color: @special_gray;
   opacity: 0.3;
+
+  @media (min-width: @tablet_width) {
+    margin: 5px 29px 0 29px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .country__user {
@@ -130,6 +221,11 @@
   line-height: 20px;
   color: @basic_blue;
   opacity: 0.3;
+
+  @media (min-width: @tablet_width) {
+    margin: 17px 26px 20px 58px;
+    font-size: 20px;
+  }
 }
 
 .country__user::before {
@@ -137,15 +233,27 @@
   position: absolute;
   height: 14px;
   width: 14px;
-  top: 2px;
+  top: 3px;
   left: -19px;
   background-image: url("../img/icon_user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-width: @tablet_width) {
+    height: 24px;
+    width: 24px;
+    top: -2px;
+    left: -34px;
+    background-size: 100%;
+  }
 }
 
 .main__button--countries {
   display: flex;
   margin-top: 25px;
   width: calc(~'100% - 60px');
+
+  @media (min-width: @tablet_width) {
+    margin-top: 46px;
+  }
 }
