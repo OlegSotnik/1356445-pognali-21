@@ -202,59 +202,90 @@
             </li>
           </ul>
         </div>
-      <div class="service__container service__background-bloc">
-        <section class="service">
-          <h2 class="main__heading">О сервисе</h2>
+      <div class="service__container">
+        <section class="service service__background">
           <div class="service__context-container">
-            <p class="context__standard">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-            <p class="context__bold-container context__bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-            <a class="main__button" href="#">
+            <h2 class="main__heading">О сервисе</h2>
+            <p class="context__standard-container-service context__standard">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+            <p class="context__bold-container-service context__bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+            <a class="main__button main__button--service" href="#">
               <span class="button__text">Подробнее</span>
               <span class="button__icon-play"></span>
             </a>
           </div>
         </section>
       </div>
-      <section class="countries">
-        <div class="countries__container">
-          <h2 class="main__heading">Направления</h2>
+      <div class="countries__container">
+        <section class="countries">
           <div class="countries__context">
-            <p class="context__standard">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <h2 class="main__heading">Направления</h2>
+            <p class="context__standard-container-countries context__standard context__standard--countries">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           </div>
           <ul class="countries__list">
             <li class="countries__item">
-              <img class="countries__image" src="img/thailand-mobile 1.jpg" width="270" height="110" alt="Изображение страны Тайланд">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/traveller_illustration_desktop.png 1x, img/traveller_illustration_desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/traveller_illustration_tablet.png 1x, img/traveller_illustration_tablet@2x.png 2x"> -->
+                <img class="countries__image" src="img/thailand_mobile.png" srcset="img/thailand_mobile@2x.png 2x" alt="Изображение страны Тайланд">
+              </picture>
               <div class="countries__country">
-                <img class="country__flag" src="img/Thailand 1.svg" width="35" height="24" alt="Флаг Тайланда">
-                <h3 class="country__name" >Таиланд</h3>
-                <p class="country__slogan">Джунгли зовут!</p>
+                <picture>
+                  <!-- <source media="(min-width: 1440px)" srcset="img/traveller_illustration_desktop.png 1x, img/traveller_illustration_desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/traveller_illustration_tablet.png 1x, img/traveller_illustration_tablet@2x.png 2x"> -->
+                  <img class="country__flag" src="img/Thailand.png" width="35" height="24" srcset="img/Thailand@2x.png 2x" alt="Флаг Тайланда">
+                </picture>
+                <div class="country__box">
+                  <h3 class="country__name">Таиланд</h3>
+                  <p class="country__slogan">Джунгли зовут!</p>
+                </div>
                 <span class="country__user">18321</span>
               </div>
             </li>
             <li class="countries__item">
-              <img class="countries__image" src="img/france-mobile 1.jpg" width="270" height="110" alt="Изображение страны Тайланд">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/traveller_illustration_desktop.png 1x, img/traveller_illustration_desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/traveller_illustration_tablet.png 1x, img/traveller_illustration_tablet@2x.png 2x"> -->
+                <img class="countries__image" src="img/france_mobile.png" srcset="img/france_mobile@2x.png 2x" alt="Изображение страны Франция">
+              </picture>
               <div class="countries__country">
-                <img class="country__flag" src="img/France 1.svg" width="35" height="24" alt="Флаг Франции">
-                <h3 class="country__name" >Франция</h3>
-                <p class="country__slogan">Трэ бьен, манифик!</p>
+                <picture>
+                  <!-- <source media="(min-width: 1440px)" srcset="img/traveller_illustration_desktop.png 1x, img/traveller_illustration_desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/traveller_illustration_tablet.png 1x, img/traveller_illustration_tablet@2x.png 2x"> -->
+                  <img class="country__flag" src="img/France.png" width="35" height="24" srcset="img/France@2x.png 2x" alt="Флаг Франции">
+                </picture>
+                <div class="country__box">
+                  <h3 class="country__name" >Франция</h3>
+                  <p class="country__slogan">Трэ бьен, манифик!</p>
+                </div>
                 <span class="country__user">12518</span>
               </div>
             </li>
             <li class="countries__item">
-              <img class="countries__image" src="img/czech-mobile 1.jpg" width="270" height="110" alt="Изображение страны Тайланд">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="img/traveller_illustration_desktop.png 1x, img/traveller_illustration_desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/traveller_illustration_tablet.png 1x, img/traveller_illustration_tablet@2x.png 2x"> -->
+                <img class="countries__image" src="img/czech_mobile.png" srcset="img/czech_mobile@2x.png 2x" alt="Изображение страны Чехия">
+              </picture>
               <div class="countries__country">
-                <img class="country__flag" src="img/Czech 1.svg" width="35" height="24" alt="Флаг Чехии">
-                <h3 class="country__name" >Чехия</h3>
-                <p class="country__slogan">Закоулки старой Европы</p>
+                <picture>
+                  <!-- <source media="(min-width: 1440px)" srcset="img/traveller_illustration_desktop.png 1x, img/traveller_illustration_desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/traveller_illustration_tablet.png 1x, img/traveller_illustration_tablet@2x.png 2x"> -->
+                  <img class="country__flag" src="img/Czech.png" width="35" height="24" srcset="img/Czech@2x.png 2x" alt="Флаг Чехии">
+                </picture>
+                <div class="country__box">
+                  <h3 class="country__name" >Чехия</h3>
+                  <p class="country__slogan">Закоулки старой Европы</p>
+                </div>
                 <span class="country__user">5326</span>
               </div>
             </li>
           </ul>
-          <div class="main__button">
-            <a href="#">Показать все</a>
-          </div>
-        </div>
-      </section>
+          <a class="main__button main__button--countries" href="#">
+            <span class="button__text">Показать все</span>
+            <span class="button__icon-play"></span>
+          </a>
+        </section>
+      </div>
       <section class="travelers">
         <div class="travelers__container">
           <h2 class="main__heading">Попутчики</h2>

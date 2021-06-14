@@ -1,18 +1,33 @@
 .service__container {
+  background-color: @basic_gray_light;
+}
+
+.service {
+  display: flex;
   min-height: 392px;
+
+  @media (min-width: @tablet_width) {
+    min-height: 780px;
+  }
+
+  @media (min-width: @desktop_width) {
+    min-height: 660px;
+  }
+}
+
+.service__background {
   background-color: @special_blue;
+  border-radius: 0 0 25px 25px;
   background-image:url("../img/about_mobile.png"), url("../img/bloc_mobile.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: 92vw auto, 38vw auto;
   background-position: 20px 39px, 0 39px;
-  border-radius: 0 0 25px 25px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/about_mobile@2x.png"), url("../img/bloc_mobile.svg");
   }
 
   @media (min-width: @tablet_width) {
-    min-height: 780px;
     background-image:url("../img/about_tablet.png"), url("../img/bloc_tablet.svg");
     background-size: 50% auto, calc(~'100% - 80px') auto;
     background-position: calc(~'100% - 8px') 144px, 40px 96px;
@@ -24,7 +39,6 @@
   }
 
   @media (min-width: @desktop_width) {
-    min-height: 660px;
     background-image:url("../img/about_desktop.png"), url("../img/bloc_desktop.svg");
     background-size: 630px 665px, 212px 212px;
     background-position: 750px -5px, 60px -20px;
@@ -35,7 +49,7 @@
   }
 }
 
-.service {
+.service__context-container {
   display: flex;
   flex-direction: column;
   margin: 72px 49px;
@@ -68,7 +82,7 @@
   }
 }
 
-.service__context-container {
+.context__standard-container-service {
   margin: 19px 0 0 0;
 
   @media (min-width: @tablet_width) {
@@ -87,7 +101,6 @@
   font-size: 16px;
   line-height: 22px;
   color: @basic_white;
-  margin: 0;
 
   @media (min-width: @tablet_width) {
     font-size: 28px;
@@ -99,7 +112,7 @@
   }
 }
 
-.context__bold-container {
+.context__bold-container-service {
   margin: 20px 0 0 0;
 
   @media (min-width: @tablet_width) {
@@ -130,9 +143,6 @@
 }
 
 .main__button {
-  display: none;
-
-  @media (min-width: @tablet_width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -140,10 +150,18 @@
     text-decoration: none;
     width: 216px;
     height: 80px;
-    margin-top: 52px;
+    margin-top: 25px;
     padding: 0 27px 0 33px;
     background-color: @basic_yellow;
     border-radius: 20px;
+}
+
+.main__button--service {
+  display: none;
+
+  @media (min-width: @tablet_width) {
+    display: flex;
+    margin-top: 52px;
   }
 
   @media (min-width: @desktop_width) {
