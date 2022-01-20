@@ -14,16 +14,25 @@
   padding: 0 25px;
   height: 100%;
   background-image: url("../img/globe_back_mobile.png");
+  @supports (background-image: url("../img/globe_back_mobile.webp")) {
+    background-image: url("../img/globe_back_mobile.webp");
+  }
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 0 -25vw;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/globe_back_mobile@2x.png");
+    @supports (background-image: url("../img/globe_back_mobile@2x.webp")) {
+      background-image: url("../img/globe_back_mobile@2x.webp");
+    }
   }
 
   @media (min-width: @tablet_width) {
     background-image: url("../img/globe_back_tablet.png");
+    @supports (background-image: url("../img/globe_back_tablet.webp")) {
+      background-image: url("../img/globe_back_tablet.webp");
+    }
     background-position: 0 32vw;
     padding: 0 40px;
     flex-direction: row;
@@ -31,17 +40,26 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/globe_back_tablet@2x.png");
+      @supports (background-image: url("../img/globe_back_tablet@2x.webp")) {
+        background-image: url("../img/globe_back_tablet@2x.webp");
+      }
     }
   }
 
   @media (min-width: @desktop_width) {
     background-image: url("../img/globe_back_desktop.png");
+    @supports (background-image: url("../img/globe_back_desktop.webp")) {
+      background-image: url("../img/globe_back_desktop.webp");
+    }
     background-position: 0 -110px;
     padding: 0 60px;
     height: 640px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/globe_back_desktop@2x.png");
+      @supports (background-image: url("../img/globe_back_desktop@2x.webp")) {
+        background-image: url("../img/globe_back_desktop@2x.webp");
+      }
     }
   }
 }

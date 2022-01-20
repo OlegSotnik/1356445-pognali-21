@@ -19,14 +19,17 @@
   grid-auto-flow: row;
   justify-items: stretch;
   grid-template-areas: "countries__context"
-                       "countries__list"
-                       "main__button--countries";
+                        "countries__list"
+                        "main__button--countries";
   grid-template-columns: 1fr;
   margin: 71px 25px 34px 25px;
 
   @media (min-width: @tablet_width) {
     margin: 73px 40px 80px 40px;
     background-image: url("../img/flags_back.png");
+    @supports (background-image: url("../img/flags_back.webp")) {
+      background-image: url("../img/flags_back.webp");
+    }
     background-repeat: no-repeat;
     background-position: 100% 7px;
     background-size: 42% auto;
@@ -34,6 +37,9 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/flags_back@2x.png");
+      @supports (background-image: url("../img/flags_back@2x.webp")) {
+        background-image: url("../img/flags_back@2x.webp");
+      }
     }
   }
 
@@ -42,7 +48,7 @@
     background-position: 100% 0;
     background-size: 287px 575px;
     grid-template-areas: "countries__list countries__context"
-                         "countries__list main__button--countries";
+                          "countries__list main__button--countries";
     grid-template-columns: 630px 690px;
     grid-template-rows: minmax(444px, min-content) minmax(131px, min-content);
     padding: 0;
@@ -150,7 +156,7 @@
   position: relative;
   display: grid;
   grid-template-areas: "country__flag-container country__flag-container"
-                       "country__box country__user";
+                        "country__box country__user";
   grid-template-columns: 68% 32%;
   grid-template-rows: 26px minmax(63px, min-content);
   background: @basic_white;
@@ -160,8 +166,8 @@
   @media (min-width: @tablet_width) {
     order: 1;
     grid-template-areas: "country__flag-container"
-                         "country__box"
-                         "country__user";
+                          "country__box"
+                          "country__user";
     grid-template-columns: 1fr;
     grid-template-rows: 30px minmax(49px, min-content) minmax(24px, min-content);
     margin: 0;
@@ -283,4 +289,3 @@
     width: 275px;
   }
 }
-
